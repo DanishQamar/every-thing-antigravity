@@ -1,47 +1,56 @@
 # Everything AntiGravity
 
-**A comprehensive configuration collection for AntiGravity (Gemini), inspired by [Everything Claude Code](https://github.com/affaan-m/everything-claude-code).**
+**The ultimate configuration collection for AntiGravity (Gemini), combining [Everything Claude Code](https://github.com/affaan-m/everything-claude-code), [AntiGravity Awesome Skills](https://github.com/sickn33/antigravity-awesome-skills), and [Gemini Superpowers](https://github.com/anthonylee991/gemini-superpowers-antigravity).**
 
-This repository contains battle-tested configurations to supercharge your AntiGravity coding agent with specialized rules, skills, and workflows.
+This repository transforms your AntiGravity agent into an expert engineer, security researcher, and product manager.
 
-## Process
+## 🚀 Features
 
-We researched the original `affaan-m/everything-claude-code` repository, analyzed its structure (Agents, Skills, Rules, Commands), and ported the best components to AntiGravity's native format.
+### 🧠 Extensive Skill Library (`.agent/skills/`)
+Over 50+ domain-specific skills including:
+- **Engineering**: `backend-dev-guidelines`, `frontend-patterns`, `tdd`, `react-ui-patterns`
+- **Security**: `pentest-checklist`, `aws-penetration-testing`, `owasp-top-10`, `api-fuzzing`
+- **Product**: `product-manager-toolkit`, `pricing-strategy`, `launch-strategy`
+- **Design**: `ui-ux-pro-max`, `frontend-design`, `mobile-design`
+- **Marketing**: `copywriting`, `seo-audit`, `social-content`
 
-## What's Inside
+### ⚡ Superpowered Workflows (`.agent/workflows/`)
+Automated processes to guide complex tasks:
+- **`/superpowers-plan`**: Create detailed implementation plans with verification steps.
+- **`/superpowers-review`**: Automated code review with severity levels.
+- **`/superpowers-tdd`**: Guided Test-Driven Development sessions.
+- **`/security-review`**: Comprehensive security auditing.
+- **`/architect-review`**: High-level system architecture analysis.
 
-### `.agent/rules/`
-Global behavioral guidelines that AntiGravity will always follow.
-- **`coding-style.md`**: Best practices for cleaner, safer code (Immutability, Error Handling).
-- **`security.md`**: Mandatory security checks (No hardcoded secrets, SQLi prevention).
+### 🛡️ Unbreakable Rules (`.agent/rules/`)
+- **`coding-style.md`**: Enforces type safety, error handling, and immutability.
+- **`security.md`**: Prevents common vulnerabilities like SQLi and hardcoded secrets.
+- **`superpowers.md`**: Activates advanced reasoning and verify-before-commit behaviors.
 
-### `.agent/skills/`
-Domain-specific knowledge packages that AntiGravity leverages for specific tasks.
-- **`backend/`**: Patterns for REST APIs, Database transactions, Caching, etc.
-- **`coding-standards/`**: Universal naming conventions and React best practices.
-- **`tdd/`**: The Test-Driven Development "Red-Green-Refactor" cycle.
+## 🛠️ Installation
 
-### `.agent/workflows/`
-Automated processes (replacing "Agents" and "Commands").
-- **`architect-review`**: High-level system design analysis.
-- **`security-review`**: Deep-dive vulnerability assessment.
-- **`tdd`**: Step-by-step TDD session guide.
-- **`plan`**: Create robust implementation plans.
-- **`code-review`**: Automated code quality checks.
+Simply copy the `.agent` directory to your project root.
 
-### Other
-- **`mcp-servers.json`**: Reference configuration for Model Context Protocol servers (GitHub, Supabase, etc.).
-- **`docs/hooks.md`**: Guide on how to implement "hooks" in AntiGravity.
+```bash
+cp -r /path/to/every-thing-antigravity/.agent /your/project/root/
+```
 
-## Quick Start
+## 📖 Usage
 
-1. **Verify Installation**: Ensure this repository is checked out or the `.agent` folder is copied to your project root.
-2. **Trigger a Workflow**:
-   - "Start a security review" -> Triggers `security-review`
-   - "Help me plan this feature" -> Triggers `plan`
-   - "Let's do TDD for this function" -> Triggers `tdd`
-3. **Benefit from Rules**: AntiGravity will automatically apply `coding-style` and `security` guidelines to its output.
+### Using Skills
+AntiGravity effectively "knows" these skills. You can ask it to:
+- "Audit this file for security vulnerabilities" (Trigger: `security-scanning`)
+- "Help me design a pricing page" (Trigger: `pricing-strategy`)
+- "Write a marketing email for this feature" (Trigger: `email-systems`)
 
-## Credits
+### Using Workflows
+Type the workflow name / slash command in the chat:
+- "Run a security review" or `/security-review`
+- "Plan the new feature" or `/superpowers-plan`
 
-Heavily inspired by and adapted from [affaan-m/everything-claude-code](https://github.com/affaan-m/everything-claude-code).
+##  CREDITS
+
+Aggregated and adapted from:
+- [affaan-m/everything-claude-code](https://github.com/affaan-m/everything-claude-code)
+- [sickn33/antigravity-awesome-skills](https://github.com/sickn33/antigravity-awesome-skills)
+- [anthonylee991/gemini-superpowers-antigravity](https://github.com/anthonylee991/gemini-superpowers-antigravity)
